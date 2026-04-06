@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAISON LUXE — Moda Feminina</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Fontes elegantes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════ -->
+    <!--           INTRO / SPLASH               -->
+    <!-- ═══════════════════════════════════════ -->
+    <div id="intro-screen">
+      <div class="intro-logo">
+        <span class="intro-line"></span>
+        <h1>MAISON<em>LUXE</em></h1>
+        <span class="intro-line"></span>
+      </div>
+      <p class="intro-tagline">Elegância que transcende</p>
+    </div>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--              HEADER / NAV              -->
+    <!-- ═══════════════════════════════════════ -->
+    <header id="header">
+      <div class="header-inner">
+        <!-- Menu hamburguer (mobile) -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- Logo -->
+        <a href="#" class="logo"> MAISON<em>LUXE</em> </a>
+
+        <!-- Navegação principal -->
+        <nav class="main-nav" id="mainNav">
+          <a href="#hero" class="nav-link" data-filter="all">Início</a>
+          <a href="#produtos" class="nav-link" data-filter="all">Coleção</a>
+          <a href="#destaques" class="nav-link">Destaques</a>
+          <a href="#footer" class="nav-link">Contato</a>
+        </nav>
+
+        <!-- Ícone do carrinho -->
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir carrinho">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 01-8 0" />
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           HERO / BANNER                -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-bg">
+        <!-- Gradiente visual decorativo -->
+        <div class="hero-gradient"></div>
+      </div>
+
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">Coleção Primavera • 2025</p>
+        <h2 class="hero-title">A arte de<br /><em>vestir bem</em></h2>
+        <p class="hero-sub">
+          Peças cuidadosamente selecionadas para a mulher que vive com intenção
+          e beleza.
+        </p>
+        <div class="hero-actions">
+          <a href="#produtos" class="btn-primary">Explorar Coleção</a>
+          <a href="#destaques" class="btn-ghost">Destaques</a>
+        </div>
+      </div>
+
+      <div class="hero-side reveal-right">
+        <!-- Visual decorativo — silhueta feminina abstrata -->
+        <div class="hero-visual">
+          <div class="circle-deco c1"></div>
+          <div class="circle-deco c2"></div>
+          <div class="hero-img-box">
+            <div class="hero-img-inner"></div>
+          </div>
+          <div class="hero-badge">
+            <span>Edição</span>
+            <strong>Limitada</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span></span>
+        <p>Role para explorar</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--         BARRA DE CATEGORIAS            -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="categories-bar reveal">
+      <div class="container">
+        <div class="categories-wrap">
+          <button class="cat-btn active" data-category="all">Todos</button>
+          <button class="cat-btn" data-category="vestidos">Vestidos</button>
+          <button class="cat-btn" data-category="blazers">Blazers</button>
+          <button class="cat-btn" data-category="calcas">Calças</button>
+          <button class="cat-btn" data-category="acessorios">Acessórios</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--          GRID DE PRODUTOS              -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="produtos">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Nossa Coleção</span>
+          <h2 class="section-title">Peças que contam histórias</h2>
+          <div class="title-ornament"></div>
+        </div>
+
+        <!-- Grid de cards de produto -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Gerado pelo JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--        SEÇÃO DE DESTAQUES              -->
+    <!-- ═══════════════════════════════════════ -->
+    <section id="destaques">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Nosso DNA</span>
+          <h2 class="section-title">Por que MAISON LUXE?</h2>
+          <div class="title-ornament"></div>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="18"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+                <path
+                  d="M20 10 L20 30 M10 20 L30 20"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+            <h3>Tecidos Nobres</h3>
+            <p>
+              Selecionamos apenas os melhores tecidos importados, garantindo
+              conforto e durabilidade incomparáveis.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <path
+                  d="M8 32 Q20 8 32 32"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+                <circle
+                  cx="20"
+                  cy="18"
+                  r="5"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+              </svg>
+            </div>
+            <h3>Design Exclusivo</h3>
+            <p>
+              Cada peça é pensada para valorizar a silhueta feminina com
+              elegância atemporal e modernidade.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <rect
+                  x="8"
+                  y="8"
+                  width="24"
+                  height="24"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+                <path
+                  d="M14 20 L18 24 L26 16"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </div>
+            <h3>Garantia Premium</h3>
+            <p>
+              Troca gratuita em 30 dias, embalagem luxuosa e atendimento
+              personalizado para cada cliente.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 40 40" fill="none">
+                <path
+                  d="M20 6 L24 16 L35 16 L26 23 L29 34 L20 27 L11 34 L14 23 L5 16 L16 16 Z"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+              </svg>
+            </div>
+            <h3>Edições Limitadas</h3>
+            <p>
+              Coleções sazonais com tiragem restrita, para que você use peças
+              verdadeiramente únicas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Banner intermediário -->
+        <div class="mid-banner reveal">
+          <div class="mid-banner-text">
+            <p class="mid-banner-eyebrow">Exclusividade redefinida</p>
+            <h3>Descubra peças que<br /><em>transformam presença</em></h3>
+            <a href="#produtos" class="btn-primary">Ver Coleção Completa</a>
+          </div>
+          <div class="mid-banner-deco">
+            <div class="deco-ring r1"></div>
+            <div class="deco-ring r2"></div>
+            <div class="deco-ring r3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--              FOOTER                    -->
+    <!-- ═══════════════════════════════════════ -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="logo">MAISON<em>LUXE</em></span>
+            <p>Moda feminina de luxo para a mulher que sabe quem é.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="Pinterest">PT</a>
+              <a href="#" aria-label="WhatsApp">WA</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Coleção</h4>
+            <ul>
+              <li><a href="#">Vestidos</a></li>
+              <li><a href="#">Blazers</a></li>
+              <li><a href="#">Calças</a></li>
+              <li><a href="#">Acessórios</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Suporte</h4>
+            <ul>
+              <li><a href="#">Trocas & Devoluções</a></li>
+              <li><a href="#">Guia de Tamanhos</a></li>
+              <li><a href="#">Frete & Entrega</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Receba lançamentos e ofertas exclusivas.</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="seu@email.com" />
+              <button type="button">→</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 MAISON LUXE. Todos os direitos reservados.</p>
+          <p>Feito com elegância ✦</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--        CARRINHO LATERAL (DRAWER)       -->
+    <!-- ═══════════════════════════════════════ -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+      <div class="cart-drawer-header">
+        <h2>Seu Carrinho</h2>
+        <button class="cart-close" id="cartClose" aria-label="Fechar carrinho">
+          ✕
+        </button>
+      </div>
+
+      <!-- Lista de itens -->
+      <div class="cart-items" id="cartItems">
+        <!-- Gerado pelo JavaScript -->
+      </div>
+
+      <!-- Resumo -->
+      <div class="cart-footer" id="cartFooter">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">R$ 0,00</span>
+        </div>
+        <div class="cart-shipping">
+          <span>Frete</span>
+          <span>Grátis ✦</span>
+        </div>
+        <div class="cart-total">
+          <span>Total</span>
+          <span id="cartTotal">R$ 0,00</span>
+        </div>
+        <button class="btn-primary btn-checkout" id="checkoutBtn">
+          Finalizar Compra
+        </button>
+        <button class="btn-ghost btn-clear" id="clearCartBtn">
+          Esvaziar Carrinho
+        </button>
+      </div>
+
+      <!-- Estado vazio -->
+      <div class="cart-empty" id="cartEmpty">
+        <div class="cart-empty-icon">
+          <svg
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+          >
+            <path d="M10 4L4 10v44a4 4 0 004 4h48a4 4 0 004-4V10l-6-6z" />
+            <line x1="4" y1="20" x2="60" y2="20" />
+            <path d="M44 32a12 12 0 01-24 0" />
+          </svg>
+        </div>
+        <p>Seu carrinho está vazio</p>
+        <span>Explore nossa coleção e encontre peças que amará.</span>
+      </div>
+    </aside>
+
+    <!-- Toast de notificação -->
+    <div class="toast" id="toast">
+      <span id="toastMsg">Produto adicionado!</span>
+    </div>
+
+    <!-- Modal de produto (quickview) -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="product-modal" id="productModal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-content" id="modalContent">
+        <!-- Gerado pelo JavaScript -->
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
